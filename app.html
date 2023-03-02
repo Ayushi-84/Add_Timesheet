@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeSheet</title>
+    <link rel="stylesheet" href="app.css">
+    <script type="text/javascript" src="app.js"></script>
+
+</head>
+
+<body>
+    <div class="main">
+      <button class="info" onclick="addRow()">Add TimeSheet</button>
+</div>
+
+<div  style="   display: flex;
+justify-content: flex-start;
+align-items: center;
+width: 100%;">
+    <div class="table-wrapper">
+        <table id="table" class="fl-table">
+            <thead>
+                <tr>
+                    <th>Dock N0.</th>
+                    <th>Date Started</th>
+                    <th>Date Ended</th>
+                    <th>Allocated Hours</th>
+                    <th>Researchers</th>
+                    <th>Team Leader</th>
+                    <th>Project Leader</th>
+                    <th>Edit</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="tr1">
+                    <td>1A</td>
+                    <td>July 21</td>
+                    <td>August 21</td>
+                    <td >100</td>
+                    <td>Vivek,Saurabh</td>
+                    <td>Shubham</td>
+                    <td>Shubham</td>
+                    <td><button onclick="edit(tr1)" style="background-color: transparent;border: none;"><img src="https://th.bing.com/th/id/R.acaa7c349408056527b28b4c1255004f?rik=Z%2f4PQpGGHcW8zQ&riu=http%3a%2f%2fimage.flaticon.com%2ficons%2fpng%2f512%2f61%2f61456.png&ehk=BXzOA%2buWRz4eHna%2f2XWLaXCKWHxQuiQso6YY1p%2bVFDc%3d&risl=&pid=ImgRaw&r=0" width="15" height="15"/></button></td>
+                </tr>
+                <tr id="tr2">
+                    <td>1A</td>
+                    <td>July 21</td>
+                    <td>August 21</td>
+                    <td>100</td>
+                    <td>Vivek,Saurabh</td>
+                    <td>Shubham</td>
+                    <td>Shubham</td>
+                    <td><button onclick="edit(tr2)" style="background-color: transparent;border: none;"><img src="https://th.bing.com/th/id/R.acaa7c349408056527b28b4c1255004f?rik=Z%2f4PQpGGHcW8zQ&riu=http%3a%2f%2fimage.flaticon.com%2ficons%2fpng%2f512%2f61%2f61456.png&ehk=BXzOA%2buWRz4eHna%2f2XWLaXCKWHxQuiQso6YY1p%2bVFDc%3d&risl=&pid=ImgRaw&r=0" width="15" height="15"/></button></td>
+
+                </tr>
+                <tr id="tr3">
+                    <td>1A</td>
+                    <td>July 21</td>
+                    <td>August 21</td>
+                    <td>100</td>
+                    <td>Vivek,Saurabh</td>
+                    <td>Shubham</td>
+                    <td>Shubham</td>
+                    <td><button onclick="edit(tr3)" style="background-color: transparent;border: none;"><img src="https://th.bing.com/th/id/R.acaa7c349408056527b28b4c1255004f?rik=Z%2f4PQpGGHcW8zQ&riu=http%3a%2f%2fimage.flaticon.com%2ficons%2fpng%2f512%2f61%2f61456.png&ehk=BXzOA%2buWRz4eHna%2f2XWLaXCKWHxQuiQso6YY1p%2bVFDc%3d&risl=&pid=ImgRaw&r=0" width="15" height="15"/></button></td>
+
+                </tr>
+                <tr id="tr4">
+                    <td>1A</td>
+                    <td>July 21</td>
+                    <td>August 21</td>
+                    <td>100</td>
+                    <td>Vivek,Saurabh</td>
+                    <td>Shubham</td>
+                    <td>Shubham</td>
+                    <td><button onclick="edit(tr4)" style="background-color: transparent;border: none;"><img src="https://th.bing.com/th/id/R.acaa7c349408056527b28b4c1255004f?rik=Z%2f4PQpGGHcW8zQ&riu=http%3a%2f%2fimage.flaticon.com%2ficons%2fpng%2f512%2f61%2f61456.png&ehk=BXzOA%2buWRz4eHna%2f2XWLaXCKWHxQuiQso6YY1p%2bVFDc%3d&risl=&pid=ImgRaw&r=0" width="15" height="15"/></button></td>
+
+                </tr>
+                <tr id="tr5">
+                    <td>1A</td>
+                    <td>July 21</td>
+                    <td>August 21</td>
+                    <td>100</td>
+                    <td>Vivek,Saurabh</td>
+                    <td>Shubham</td>
+                    <td>Shubham</td>
+                    <td><button onclick="edit(tr5)" style="background-color: transparent;border: none;"><img src="https://th.bing.com/th/id/R.acaa7c349408056527b28b4c1255004f?rik=Z%2f4PQpGGHcW8zQ&riu=http%3a%2f%2fimage.flaticon.com%2ficons%2fpng%2f512%2f61%2f61456.png&ehk=BXzOA%2buWRz4eHna%2f2XWLaXCKWHxQuiQso6YY1p%2bVFDc%3d&risl=&pid=ImgRaw&r=0" width="15" height="15"/></button></td>
+                </tr>
+            <tbody>
+        </table>
+      
+    </div>
+    </div>
+</body>
+
+</html>
