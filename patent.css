@@ -29,6 +29,14 @@ width: 97%;height: 11vh;margin: 5px;border: 1pt black solid;
 border-radius: 10px;
   }
 
+  #maindiv{
+    height: 65vh;overflow-y: scroll;width: 97%;overflow-x: hidden;
+  }
+
+  #maindiv::-webkit-scrollbar{
+    width: 1px;
+  }
+
 .animals{
   display: list-item;    
  } 
