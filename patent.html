@@ -5,20 +5,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TimeSheet</title>
-    <link rel="stylesheet" href="app.css">
-    <script type="text/javascript" src="app.js"></script>
+    <title>Patent Search</title>
+    <link rel="stylesheet" href="patent.css">
+    <script type="text/javascript" src="patent.js"></script>
 
 </head>
 
 <body>
 <div style="width: 100%; height: 100vh;">
     <div style="display:flex;flex-direction: row;width: 100%; height: 100vh;">
-        <div style="display: flex;flex-direction: column;width: 30%;height: 100vh;margin: 5px;">
-            <div style="width: 100%;height: 40vh;margin: 5px;border: 2px black solid;">
+        <div style="display: flex;flex-direction: column;width: 30%;height: 100vh;margin: 5px;border: 2px black solid;align-items: center;">
+            <div style="width: 95%;height: 30vh;margin: 5px;border: 1pt black solid;display: flex;align-items: center;flex-direction: column;">
+
+                <input id="searchbar" onkeyup="search_animal()" type="text"
+                name="search" placeholder="Search animals..">
+              
+            <!-- ordered list -->
+            <ol id='list'>
+                <li class="animals">Cat</li>
+                <li class="animals">Dog</li>
+                <li class="animals">Elephant</li>
+                <li class="animals">Fish</li>
+                <li class="animals">Donkey</li>
+            </ol>
 
             </div>
-            <div style="width: 100%;height: 60vh;margin: 5px;border: 2px black solid;">
+            <div id="div1">
+
+            </div>
+            <div id="div1">
+
+            </div>
+            <div id="div1">
+
+            </div>
+            <div id="div1">
 
             </div>
 
