@@ -5,84 +5,182 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patent Search</title>
-    <link rel="stylesheet" href="patent.css">
-    <script type="text/javascript" src="patent.js"></script>
-
+    <title>Patents</title>
+    <link rel="icon" href="../static/img/favicon.png" type="image/x-icon">
+    <link
+href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./patent.css">
+    <script src="./patent.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+    $( function() {
+      $( "#hides" ).resizable();
+    } );
+    </script>
 </head>
 
-<body>
-<div style="width: 100%; height: 100vh;">
-    <div style="display:flex;flex-direction: row;width: 100%; height: 100vh;">
-        <div style="display: flex;flex-direction: column;width: 30%;height: 100vh;margin: 5px;border: 2px black solid;align-items: center;">
-            <div style="width: 95%;height: 30vh;margin: 5px;border: 1pt black solid;display: flex;align-items: center;flex-direction: column;">
-
-                <input id="searchbar" onkeyup="search_animal()" type="text"
-                name="search" placeholder="Search animals..">
-              
-            <!-- ordered list -->
-            <ol id='list'>
-                <li class="animals">Cat</li>
-                <li class="animals">Dog</li>
-                <li class="animals">Elephant</li>
-                <li class="animals">Fish</li>
-                <li class="animals">Donkey</li>
-            </ol>
-
+<body onload="showSlides()">
+    <div class="container">
+        <div class="sub-container1">
+            <button id="advancesearchs" onclick="advancesrh()">HighLight</button>
+            <div id="advanceSearch">
+                <button id="close" onclick="closes()"><i class="fa fa-times" aria-hidden="true"></i></button>
+                <div class="inputarea">
+                    <input type="search" placeholder="keywords" class="inp">
+                </div>
             </div>
-            <div id="maindiv">
-            <div id="div1">
-
+            <div class="Patentcards">
+                <a href="">
+                    <div class="cards">
+                        <div>
+                            <h5>US2022YTRUU</h5>
+                        </div>
+                        <div>
+                            <p style="  font-weight: 200;display: flex; font-size: 18px; padding: 1% 0% 1%;justify-content: center;align-items: center;"> Lorem ipsum, dolor sit amet</p></span>
+                        </div>
+                        <div class="Points">
+                            <div>
+                                <p><strong>Inventor:</strong> <span class="txt">Anthony sonu  </span> </p>
+                            </div>
+                            <div>
+                                <p><strong>Assignee:</strong> <span class="txt">Ravikant  </span></p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div id="div1">
+        </div>
+        <div class="container1" id="hides">
+            <div class="sub-container2">
+                <button id="slides" onclick="divided()" ></button>
+                <button id="slides1" onclick="divided1()" ></button>
+                <button id="slides2" onclick="divided2()" ></button>
+                <h3 id="tytles" >
+                    <pre>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores</pre>
+                </h3>
+                <div class="abs">
+                    <h4>Abstract</h4>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore accusantium enim, provident
+                            iusto vero oshdosncoislcnj bsbcsnkcn jkscblksanajcnjk ksasbcjksanjcnlka Lorem ipsum dolor
+                            sit amet consectetur adipisicing elit. Culpa ut itaque dolore, pariatur et beatae non
+                            adipisci fuga deserunt mollitia exercitationem qui, debitis assumenda incidunt dignissimos?
+                            Molestiae, quod? Tempore, repellendus?</p>
+                    </div>
+                </div>
+                <div class="des">
+                    <h4>Description</h4>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore accusantium enim, provident
+                            iusto vero oshdosncoislcnj bsbcsnkcn jkscblksanajcnjk ksasbcjksanjcnlka Lorem ipsum dolor
+                            sit amet consectetur adipisicing elit. Culpa ut itaque dolore, pariatur et beatae non
+                            adipisci fuga deserunt mollitia exercitationem qui, debitis assumenda incidunt dignissimos?
+                            Molestiae, quod? Tempore, repellendus?</p>
+                    </div>
+                </div>
 
+                <div class="appl">
+                    <h4>Related Application</h4>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore accusantium enim, provident
+                            iusto vero oshdosncoislcnj bsbcsnkcn jkscblksanajcnjk ksasbcjksanjcnlka Lorem ipsum dolor
+                            sit amet consectetur adipisicing elit. Culpa ut itaque dolore, pariatur et beatae non
+                            adipisci fuga deserunt mollitia exercitationem qui, debitis assumenda incidunt dignissimos?
+                            Molestiae, quod? Tempore, repellendus?</p>
+                    </div>
+                </div>
+                <div class="backg">
+                    <h4>Background</h4>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore accusantium enim, provident
+                            iusto vero oshdosncoislcnj bsbcsnkcn jkscblksanajcnjk ksasbcjksanjcnlka Lorem ipsum dolor
+                            sit amet consectetur adipisicing elit. Culpa ut itaque dolore, pariatur et beatae non
+                            adipisci fuga deserunt mollitia exercitationem qui, debitis assumenda incidunt dignissimos?
+                            Molestiae, quod? Tempore, repellendus?</p>
+                    </div>
+                </div>
             </div>
-            <div id="div1">
+           
+            <div class="sub-container3" id="claim" >
+                <h4>Claims</h4>
 
-            </div>
-            <div id="div1">
-
-            </div>
-            <div id="div1">
-
-            </div><div id="div1">
-
-            </div><div id="div1">
-
-            </div><div id="div1">
-
-            </div><div id="div1">
-
-            </div><div id="div1">
+                <ol>
+                    <pre>1. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis ullam, repudiandae expedita
+                    possimus quasi quibusdam doloremque quo ex corrupti perferendis harum fugit laborum, porro
+                    consequuntur culpa natus dolor omnis ad.
+                    1.1 . Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem perferendis debitis veniam
+                    cupiditate in distinctio, quas iusto ducimus aliquid esse? Id, culpa dolorum? Aliquid commodi
+                    quaerat itaque assumenda dolores asperiores.
+                    1.11. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis suscipit consequuntur
+                    dolor libero totam nobis sunt, consectetur nam accusantium architecto unde alias reiciendis iure
+                    tenetur, natus, mollitia voluptate sed aliquam?2 . Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit natus enim beatae et ad sint
+                    sunt. Voluptatem a sunt, sapiente laudantium est voluptatum dolore adipisci officiis, nam labore
+                    accusantium aperiam!
+                    2.1 . Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis maiores quas vel sapiente,
+                    voluptas sequi illum quos esse dolor! Quo accusantium eos assumenda eum fugiat modi nesciunt facere,
+                    repudiandae eligendi.
+                    2.22 . Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sed suscipit non rem
+                    officiis ipsam eos ut deserunt ipsum, iste voluptatum, voluptate, maxime magnam modi sint adipisci
+                    iure cum at?</pre>
+                </ol>
 
             </div>
         </div>
+      
+        <div class="container2" id="hides2">
+            <div class="sub-container4" id="hide">
+                <div class="patentnum">
+                    <h3><a href="#">US2022TRYU</a></h3>
+                </div>
+                <div class="information">
+                    <div>
+                        <h3>Inventor: <span class="txt2">Steve ravi ravi ravi </span> </h3>
+                    </div>
+                    <div>
+                        <h3>Current Assignee: <span class="txt2">ravikant</span> </h3>
+                    </div>
+                </div>
+                <div class="www">
+                    <h3>Worldwide Application</h3>
+                    <ul>
+                        2009<span>US</span>
+                        2009<span>US</span>
+                    </ul>
+                </div>
+                <div class="event">
+                    <h3>Application events</h3>
+                    <ul>
+                        <h5>2018-09-9:<span>Application Filed by whirlpool</span></h5>
+                    </ul>
 
+                </div>
+            </div>
+            <div class="sub-container5">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="../static/img/US11342720-20220524-D00000.png">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="../static/img/US11342720-20220524-D00001.png">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="../static/img/US11342720-20220524-D00002.png">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                </div>
+                <br>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
         </div>
-
-        <div style="display: flex;flex-direction: column;width: 36%;height: 100vh;margin: 5px;">
-            <div style="width: 100%;height: 60vh;margin: 5px;border: 2px black solid;">
-
-            </div>
-            <div style="width: 100%;height: 40vh;margin: 5px;border: 2px black solid;">
-
-            </div>
-
-        </div>
-
-        <div style="display: flex;flex-direction: column;width: 30%;height: 100vh;margin: 5px;">
-            <div style="width: 100%;height: 50vh;margin: 5px;border: 2px black solid;">
-
-            </div>
-            <div style="width: 100%;height: 50vh;margin: 5px;border: 2px black solid;">
-
-            </div>
-
-        </div>
-
     </div>
-
-</div>
 </body>
 
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 </html>
