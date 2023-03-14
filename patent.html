@@ -15,7 +15,9 @@ href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="
   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
   <script>
     $( function() {
-      $( "#hides" ).resizable();
+      $( "#hides" ).resizable({
+        containment: "#mainHide"
+      });
     } );
     </script>
 </head>
@@ -51,6 +53,7 @@ href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="
                 </a>
             </div>
         </div>
+        <div id="mainHide" style="width: 50%;height: 98vh;">
         <div class="container1" id="hides">
             <div class="sub-container2">
                 <button id="slides" onclick="divided()" ></button>
@@ -127,6 +130,7 @@ href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="
 
             </div>
         </div>
+    </div>
       
         <div class="container2" id="hides2">
             <div class="sub-container4" id="hide">
